@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+header ul { 
+   position: relative;
+}
+header ul li:nth-child(1) {position: absolute; left: 20px;}
+header ul li:nth-child(2) {position: absolute; left: 100px;}
+header ul li:nth-child(4) {position: absolute; right: 20px;}
+/* header ul li:nth-child(3) {position: absolute; right: 200px;} */
+
+
+nav {display: grid; grid-template-columns: repeat(2,1fr);}
+.menu {display: block; background-color: #000;}
+.menu a {color: #fff;}
+.menu ul {display: flex; justify-content: space-between; padding-top: 25px; padding-right: 50px;} 
+.logo p {display: none;}
+
+main .container1 {
+    display: grid; grid-template-columns: 70% 30%; grid-template-rows: repeat(2,1fr);
+    position: relative;
+}
+main .txt { width: 340px; height: 340px; }
+main .txt1 {background-color: #fff; color: #000;}
+main .txt2 {
+    display: block; grid-row: 2/3; grid-column: 2/3; 
+    padding: 0 50px 50px; background-color: #000; color: #fff;
+}
+main .txt2 .img {  } /* 해결 안됨 */
+main .main_img {grid-row: 1/3;}
+
+main .box {
+    display: grid; 
+    grid-template-columns: repeat(4,1fr); grid-template-rows: repeat(2,100px);
+}
+main .box p:last-child {grid-row: 2/3; grid-column: 3/5;}
+main .box .hide_img {display: block;}
