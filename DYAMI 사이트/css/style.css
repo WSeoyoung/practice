@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+html {
+    font-family: 'Noto Sans KR', AppleSDGothicNeo-Light,Malgun Gothic,dotum, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-transform: capitalize;
+}
+a {
+    color: inherit; 
+}
+/********************** header **********************/
+.container header {
+    width: 100%;
+    background-color: #fadcdc;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 17px;
+
+    position: sticky; 
+    top: 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.container header h1 a {
+    background: url(../images/logo.png) no-repeat 0 0 / contain;
+    display: block;
+    width: 100px; height: 80px;
+    text-indent: -9999px;
+    margin-left: 34px;
+}
+.container header #gnb {
+    text-transform: uppercase;
+    color: #444; font-weight: 600;
+    /* letter-spacing: 2px; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+
+    position: absolute;
+    right: 48px;
+}
+.container header #gnb .gnb { display: none;}
+
+
+/********************** main **********************/
+
+/* slide main */
+.container main .slide_main {
+    width: 100%; height: 865px;
+    background: url(../images/메인_hero-bg.png)#fadcdc no-repeat 50% / cover;
+}
+.container main .txt_main {
+    width: 634px; height: 436px;
+    
+    position: absolute;
+    top: 268px; left: 200px;
+
+}
+.container main .txt_main p {
+    font-size: 17px; 
+    text-transform: uppercase; 
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 26px  ;
+    letter-spacing: 6px;
+}
+.container main .txt_main h2 {
+    font-size: 72px; 
+    font-family: 'Montserrat', sans-serif;
+    margin: 24px 26px;
+}
+.container main .txt_main a i {
+    font-size: 70px; color: #333;
+}
+
+.container main .img_main {
+    width: 65%;
+
+    position: absolute;
+    top: 70px; right: -200px;
+}
+.container main .img_main img {
+    width: 80%;
+    height: auto;
+}
+.container main .img_main .img2, .container main .img_main .img3 {
+    display: none;
+}
+
+.container main .num_main {
+    width: 115px;
+    display: flex;
+
+    position: absolute;
+    bottom: 50px; right: 380px;
+}
+.container main .num_main li {
+    margin-left: 20px;
+}
+
+/* text main */
+.container main .text_main {
+    width: 1524px; height: 518px;
+    margin: 142px auto;
+
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(2,1fr);
+}
+.container main .text_main .txt {
+    font-size: 18px;
+    padding: 40px;
+    text-transform: none;
+}
+.container main .text_main .txt h3 {
+    font-size: 32px; font-weight: 700;
+    font-family: 'Montserrat', sans-serif; 
+    margin-bottom: 42px;
+}
+.container main .text_main .box1, .container main .text_main .box2 {
+    border-bottom: 1px solid #eee;
+}
+.container main .text_main .box1, .container main .text_main .box3 {
+    border-right: 1px solid #eee;
+}
+
+/* :hover img */
+.container main .hover_main {
+    width: 100%; height: 1080px; text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+/* 이미지들 */
+.container main .hover_main .img {width: 100%; height: 100%;}
+.container main .hover_main .box1 {
+    background: url(../images/img_1.jpg) no-repeat 50% / cover; 
+    grid-row: 1/3; grid-column: 1/3;
+}
+.container main .hover_main .box2 {
+    background: url(../images/img_2.jpg) no-repeat 50% / cover; 
+    grid-column: 3/4;
+}
+.container main .hover_main .box3 {
+    background: url(../images/img_3.jpg) no-repeat 50% / cover; 
+}
+.container main .hover_main .box4 {
+    background: url(../images/img_4.jpg) no-repeat 50% / cover; 
+    grid-column: 3/5;
+}
+.container main .hover_main .box5 {
+    background: url(../images/img_5.jpg) no-repeat 50% / cover; 
+    grid-column: 1/3;
+}
+.container main .hover_main .box6 {
+    background: url(../images/img_6.jpg) no-repeat 50% / cover; 
+    grid-column: 3/4;
+}
+.container main .hover_main .box7 {
+    background: url(../images/img_7.jpg) no-repeat 50% / contain; 
+}
+
+.container main .hover_main .img p {
+    width: 100%; height: 100%;
+    font-size: 32px; font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 150px;
+
+    display: none;
+}
+.container main .hover_main .box1 p {padding-top: 350px;}
+.container main .hover_main .img:hover p {
+    background-color: rgba(255, 255, 255, .7);
+    display: block;
+}
+
+/* our business */
+.container main #business {
+    width: 80%; height: 2018px;
+    margin: 0 auto;
+}
+.container main #business .middle_text {
+    height: 432px;
+    text-align: center; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container main #business .middle_text h3 {
+    font-size: 56px; font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 34px;
+}
+.container main #business .middle_text p:last-child {
+    font-size: 20px; font-weight: 300;
+    text-transform: none;
+    padding-top: 34px; padding-bottom: 48px;
+    line-height: 1.8;
+}
+.container main #business .middle_text .bar {
+    width: 50px; height: 2px;
+    background-color: #000;
+}
+
+/**********************************************************/
+
+.container main #business .middle_img {
+    width: 100%;
+    text-transform: none;
+
+    display: grid; 
+    grid-template: repeat(2,1fr) / repeat(2,1fr);
+}
+.container main #business .middle_img .ig {
+    margin-right: 20px;
+}
+.container main #business .middle_img .box {
+    width: 100%; height: 782px;
+    background-color: #444;
+}
+
+/* 이미지들 */
+.container main #business .middle_img .ig .mbox1 { background: url(../images/img2-01.jpg);}
+.container main #business .middle_img .ig .mbox2 { background: url(../images/img2-02.jpg);}
+.container main #business .middle_img .ig .mbox3 { background: url(../images/img2-03.jpg);}
+.container main #business .middle_img .ig .mbox4 { background: url(../images/img2-04.jpg);}
+
+
+
+.container main #business .middle_img .txt {
+    width: 100%; height: 116px; 
+    text-align: center; font-size: 18px;
+    padding: 30px;
+    margin-bottom: 30px;
+    
+}
+.container main #business .middle_img .txt h5 {
+    font-size: 24px; font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* .container main #business .middle_img {
+    width: 100%; 
+    text-transform: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr);
+}
+.container main #business .middle_img div {
+    width: 100%; height: 782px;
+    text-align: center; font-size: 18px;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: end;
+}
+
+ 이미지들 
+.container main #business .middle_img .mbox1 {
+    background: url(../images/img2-01.jpg);
+}
+.container main #business .middle_img .mbox2 {
+    background: url(../images/img2-02.jpg);
+}
+.container main #business .middle_img .mbox3 {
+    background: url(../images/img2-03.jpg);
+}
+.container main #business .middle_img .mbox4 {
+    background: url(../images/img2-04.jpg);
+}
+.container main #business .middle_img .txt {
+    width: 100%; height: 116px;
+}
+.container main #business .middle_img .txt h5 {
+    font-size: 24px; font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+} */
