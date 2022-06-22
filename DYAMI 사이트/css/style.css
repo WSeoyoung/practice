@@ -246,39 +246,3 @@ a {
     margin-bottom: 10px;
 }
 
-/* .container main #business .middle_img {
-    width: 100%; 
-    text-transform: none;
-    display: grid;
-    grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(2,1fr);
-}
-.container main #business .middle_img div {
-    width: 100%; height: 782px;
-    text-align: center; font-size: 18px;
-
-    display: flex; 
-    flex-direction: column;
-    justify-content: end;
-}
-
- 이미지들 
-.container main #business .middle_img .mbox1 {
-    background: url(../images/img2-01.jpg);
-}
-.container main #business .middle_img .mbox2 {
-    background: url(../images/img2-02.jpg);
-}
-.container main #business .middle_img .mbox3 {
-    background: url(../images/img2-03.jpg);
-}
-.container main #business .middle_img .mbox4 {
-    background: url(../images/img2-04.jpg);
-}
-.container main #business .middle_img .txt {
-    width: 100%; height: 116px;
-}
-.container main #business .middle_img .txt h5 {
-    font-size: 24px; font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 10px;
-} */
